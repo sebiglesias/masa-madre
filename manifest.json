@@ -1,0 +1,17 @@
+{
+  "name": "Calculadora de Masa Madre y Pizza Napolitana",
+  "short_name": "Masa Madre",
+  "description": "Calculadora de hidratación, porcentaje panadero, masa madre activa y cronograma de fermentación para pizza y pan artesanal.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#0c0a09",
+  "theme_color": "#0c0a09",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

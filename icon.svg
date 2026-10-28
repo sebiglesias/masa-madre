@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1c1917"/>
+      <stop offset="100%" stop-color="#0c0a09"/>
+    </linearGradient>
+    <linearGradient id="crustGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="40%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#92400e"/>
+    </linearGradient>
+    <linearGradient id="crumbGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef3c7"/>
+      <stop offset="100%" stop-color="#fde68a"/>
+    </linearGradient>
+    <linearGradient id="wheatGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Card -->
+  <rect width="512" height="512" rx="110" fill="url(#bgGrad)"/>
+  <rect x="16" y="16" width="480" height="480" rx="98" fill="none" stroke="#292524" stroke-width="6"/>
+
+  <!-- Sourdough Boule (Artisan Loaf) -->
+  <!-- Base Loaf Silhouette -->
+  <ellipse cx="256" cy="330" rx="160" ry="110" fill="url(#crustGrad)"/>
+  <ellipse cx="256" cy="320" rx="150" ry="100" fill="url(#crustGrad)"/>
+
+  <!-- Artisan Score / Ear (Grigne) Expansion Opening -->
+  <path d="M140 310 C180 230, 332 230, 372 310 C320 260, 192 260, 140 310 Z" fill="url(#crumbGrad)"/>
+  
+  <!-- Ear Crust Flap -->
+  <path d="M136 308 C185 220, 327 220, 376 308 C325 240, 187 240, 136 308 Z" fill="#78350f" opacity="0.8"/>
+
+  <!-- Floured crust dusting / blisters -->
+  <ellipse cx="210" cy="275" rx="8" ry="5" fill="#fef3c7" opacity="0.6"/>
+  <ellipse cx="300" cy="275" rx="9" ry="6" fill="#fef3c7" opacity="0.6"/>
+  <ellipse cx="256" cy="255" rx="12" ry="7" fill="#fef3c7" opacity="0.7"/>
+
+  <!-- Wheat Spikelet (Espiga de Trigo) Accent -->
+  <g transform="translate(256, 120) scale(0.9)" fill="url(#wheatGrad)">
+    <!-- Stem -->
+    <path d="M0 0 L0 80" stroke="#d97706" stroke-width="4" stroke-linecap="round"/>
+    <!-- Grains -->
+    <ellipse cx="-16" cy="15" rx="10" ry="20" transform="rotate(-35 -16 15)"/>
+    <ellipse cx="16" cy="15" rx="10" ry="20" transform="rotate(35 16 15)"/>
+    <ellipse cx="-18" cy="40" rx="10" ry="20" transform="rotate(-35 -18 40)"/>
+    <ellipse cx="18" cy="40" rx="10" ry="20" transform="rotate(35 18 40)"/>
+    <ellipse cx="-18" cy="65" rx="10" ry="20" transform="rotate(-35 -18 65)"/>
+    <ellipse cx="18" cy="65" rx="10" ry="20" transform="rotate(35 18 65)"/>
+    <!-- Awns / Barbas de la espiga -->
+    <path d="M-22 5 L-40 -20 M22 5 L40 -20 M-26 30 L-50 10 M26 30 L50 10" stroke="#fbbf24" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+</svg>

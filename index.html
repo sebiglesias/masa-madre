@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Masa Madre y Pizza Napolitana | Hidratación y Fermentación</title>
+  <meta name="description" content="Calcula online la hidratación, porcentaje panadero, masa madre activa o levadura y cronograma de fermentación inversa para pizza napolitana, pan de masa madre y focaccia.">
+  <meta name="keywords" content="calculadora masa madre, calculadora pizza napolitana, porcentaje panadero, calcular hidratacion pan, fermentacion lenta pizza, masa madre activa levain">
+  <link rel="canonical" href="https://sebiglesias.com.ar/masa-madre/">
+  <meta name="google-adsense-account" content="ca-pub-3381238987477190">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Calculadora de Masa Madre y Pizza Napolitana | Hidratación y Fermentación">
+  <meta property="og:description" content="Calcula la hidratación exacta, masa madre y cronograma horario para hornear panes y pizzas artesanales perfectas.">
+  <meta property="og:url" content="https://sebiglesias.com.ar/masa-madre/">
+  <meta property="og:image" content="https://sebiglesias.com.ar/masa-madre/icon.svg">
+
+  <!-- Icons & PWA -->
+  <link rel="icon" type="image/svg+xml" href="icon.svg">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0c0a09">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2BNDBQP0W7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-2BNDBQP0W7');
+  </script>
+
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3381238987477190" crossorigin="anonymous"></script>
+
+  <!-- Structured Data JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://sebiglesias.com.ar/masa-madre/#webapp",
+        "name": "Calculadora de Masa Madre y Pizza Napolitana",
+        "url": "https://sebiglesias.com.ar/masa-madre/",
+        "description": "Calculadora técnica de porcentaje panadero, hidratación, masa madre activa y cronograma inverso de fermentación.",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "All",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://sebiglesias.com.ar/masa-madre/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Qué es el porcentaje panadero y cómo se calcula?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "El porcentaje panadero (Baker's Percentage) es el sistema universal que utilizan panaderos y pizzeros profesionales donde el peso total de la harina siempre representa el 100%. Todos los demás ingredientes (agua, sal, masa madre, levadura, aceite) se expresan como un porcentaje relativo a ese peso de harina. Por ejemplo, si usamos 1000g de harina y 650g de agua, la masa tiene una hidratación del 65%."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuál es la hidratación recomendada para Pizza Napolitana?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "El estándar tradicional según el pliego de la AVPN (Associazione Verace Pizza Napoletana) oscila entre el 58% y el 65% de agua respecto a la harina. Para hornos domésticos que alcanzan 250°C a 300°C, se recomienda una hidratación del 65% al 70% para evitar que la masa se seque durante los 4 a 6 minutos de cocción."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Por qué es tan beneficiosa la fermentación lenta en frío (heladera 4°C)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A temperaturas de refrigeración (4°C a 6°C), la actividad de las levaduras se ralentiza drásticamente mientras las enzimas amilasas y proteasas continúan descomponiendo los almidones complejos en azúcares simples y predigiriendo el gluten. Esto produce masas mucho más digestivas, evita la pesadez estomacal y genera una corteza con alvéolos aireados y moteado leopardo al hornear."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuánta levadura seca equivale a la levadura fresca?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "La relación estándar es de 1 a 3: 1 gramo de levadura seca instantánea equivale aproximadamente a 3 gramos de levadura fresca prensada."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuándo está lista la masa madre para ser utilizada?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "La masa madre debe utilizarse en su 'pico de actividad', habitualmente entre 4 y 8 horas después de su último refresco (a 22°C-24°C), cuando haya duplicado o triplicado su volumen, su superficie presente burbujas y cúpula ligeramente convexa, y una cucharadita flote al colocarla en un vaso de agua templada (prueba de flotabilidad)."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="icon.svg" alt="Masa Madre Icon" class="brand-icon">
+        <div>
+          <h1 class="brand-title">Masa Madre &amp; Pizza <span class="brand-badge">PRO</span></h1>
+          <a href="https://sebiglesias.com.ar" class="back-link">← Volver a sebiglesias.com.ar</a>
+        </div>
+      </div>
+      <button id="theme-toggle" class="theme-toggle-btn" aria-label="Cambiar tema">☀️</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Recipe Preset Switcher -->
+    <div class="recipe-switcher">
+      <button class="recipe-tab-btn active" data-recipe="pizza">
+        <span>🍕 Pizza Napolitana</span>
+      </button>
+      <button class="recipe-tab-btn" data-recipe="bread">
+        <span>🍞 Hogaza de Masa Madre</span>
+      </button>
+      <button class="recipe-tab-btn" data-recipe="focaccia">
+        <span>🫓 Focaccia Alta Hidratación</span>
+      </button>
+    </div>
+
+    <!-- Main Grid -->
+    <div class="calc-grid">
+      <!-- Left Column: Inputs & Fermentation Parameters -->
+      <section class="card">
+        <h2 class="card-title">
+          <span>⚙️ Parámetros de la Masa</span>
+        </h2>
+
+        <div class="form-row-2">
+          <div class="form-group">
+            <label class="form-label" for="count-input">
+              <span>Cantidad de Piezas</span>
+              <span class="form-sublabel">Bollos / Hogazas</span>
+            </label>
+            <input type="number" id="count-input" class="form-input" min="1" max="50" value="4">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="weight-input">
+              <span>Peso por Pieza</span>
+              <span class="form-sublabel">Gramos</span>
+            </label>
+            <div class="input-with-unit">
+              <input type="number" id="weight-input" class="form-input" min="50" max="2000" step="5" value="265">
+              <span class="input-unit">g</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hydration Slider -->
+        <div class="form-group">
+          <div class="form-label">
+            <span>Hidratación (Agua / Harina)</span>
+            <span id="badge-hydration" class="range-val-badge">65%</span>
+          </div>
+          <div class="slider-container">
+            <input type="range" id="hydration-range" class="form-range" min="55" max="90" step="1" value="65">
+          </div>
+        </div>
+
+        <!-- Leavening Selection -->
+        <div class="form-group">
+          <label class="form-label" for="leavening-select">
+            <span>Tipo de Fermento</span>
+          </label>
+          <select id="leavening-select" class="form-select">
+            <option value="sourdough" selected>Masa Madre Activa al 100% de hidratación (Levain)</option>
+            <option value="instant_yeast">Levadura Seca Instantánea</option>
+            <option value="fresh_yeast">Levadura Fresca Prensada</option>
+          </select>
+        </div>
+
+        <div class="form-row-2">
+          <div class="form-group">
+            <label class="form-label" for="salt-input">
+              <span>Sal (% panadero)</span>
+            </label>
+            <div class="input-with-unit">
+              <input type="number" id="salt-input" class="form-input" min="1" max="4" step="0.1" value="2.8">
+              <span class="input-unit">%</span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="oil-input">
+              <span>Aceite de Oliva (% opcional)</span>
+            </label>
+            <div class="input-with-unit">
+              <input type="number" id="oil-input" class="form-input" min="0" max="10" step="0.5" value="0">
+              <span class="input-unit">%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fermentation Conditions -->
+        <div class="form-group">
+          <div class="form-label">
+            <span>Temperatura Ambiente Cocina</span>
+            <span id="badge-temp" class="range-val-badge">22°C</span>
+          </div>
+          <div class="slider-container">
+            <input type="range" id="temp-range" class="form-range" min="16" max="32" step="1" value="22">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="form-label">
+            <span>Maduración en Heladera (4°C)</span>
+            <span id="badge-cold" class="range-val-badge">20 h</span>
+          </div>
+          <div class="slider-container">
+            <input type="range" id="cold-range" class="form-range" min="0" max="72" step="2" value="20">
+          </div>
+        </div>
+
+        <div class="action-toolbar" style="margin-top: 24px;">
+          <button id="btn-share" class="btn-primary">
+            <span>📲 Copiar Fórmula / WhatsApp</span>
+          </button>
+          <button id="btn-print" class="btn-secondary">
+            <span>🖨️ Imprimir</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- Right Column: Results Recipe Formula -->
+      <section class="card">
+        <h2 class="card-title">
+          <span>📋 Fórmula Panadera Resultante</span>
+        </h2>
+
+        <div class="results-hero">
+          <div class="hero-box">
+            <div id="hero-total-dough" class="hero-val">1060 g</div>
+            <div class="hero-label">Peso Total de Masa</div>
+          </div>
+          <div class="hero-box">
+            <div id="hero-flour" class="hero-val">600 g</div>
+            <div class="hero-label">Harina Base (100%)</div>
+          </div>
+        </div>
+
+        <div class="ingredient-list">
+          <!-- Flour -->
+          <div class="ing-card">
+            <div class="ing-left">
+              <span class="ing-icon">🌾</span>
+              <div>
+                <div class="ing-title">Harina de Fuerza / 000</div>
+                <div class="ing-pct">100% (Base panadera)</div>
+              </div>
+            </div>
+            <div class="ing-right">
+              <div id="val-flour" class="ing-val">600 g</div>
+            </div>
+          </div>
+
+          <!-- Water -->
+          <div class="ing-card">
+            <div class="ing-left">
+              <span class="ing-icon">💧</span>
+              <div>
+                <div class="ing-title">Agua</div>
+                <div class="ing-pct">Agua fría o del tiempo</div>
+              </div>
+            </div>
+            <div class="ing-right">
+              <div id="val-water" class="ing-val">390 g</div>
+            </div>
+          </div>
+
+          <!-- Leavening -->
+          <div class="ing-card">
+            <div class="ing-left">
+              <span class="ing-icon">🧫</span>
+              <div>
+                <div id="title-leavening" class="ing-title">Masa Madre Activa (100% hidr.)</div>
+                <div id="pct-leavening" class="ing-pct">15%</div>
+              </div>
+            </div>
+            <div class="ing-right">
+              <div id="val-leavening" class="ing-val">90 g</div>
+            </div>
+          </div>
+
+          <!-- Salt -->
+          <div class="ing-card">
+            <div class="ing-left">
+              <span class="ing-icon">🧂</span>
+              <div>
+                <div class="ing-title">Sal Fina Marina</div>
+                <div class="ing-pct">Regula fermentación y sabor</div>
+              </div>
+            </div>
+            <div class="ing-right">
+              <div id="val-salt" class="ing-val">16.8 g</div>
+            </div>
+          </div>
+
+          <!-- Oil (Optional) -->
+          <div id="card-oil" class="ing-card" style="display: none;">
+            <div class="ing-left">
+              <span class="ing-icon">🫒</span>
+              <div>
+                <div class="ing-title">Aceite de Oliva Virgen Extra</div>
+                <div class="ing-pct">Aporte de terneza y aroma</div>
+              </div>
+            </div>
+            <div class="ing-right">
+              <div id="val-oil" class="ing-val">0 g</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Baking Schedule Timeline Section -->
+    <section class="schedule-section">
+      <div class="schedule-header">
+        <h2 class="card-title" style="margin-bottom: 0;">
+          <span>⏰ Cronograma Inverso de Horneado</span>
+        </h2>
+        <div class="target-time-box">
+          <label style="font-size: 0.85rem; font-weight: 700; color: var(--text-secondary);" for="target-time">
+            ¿A qué hora quieres comer?
+          </label>
+          <input type="date" id="target-date" class="form-input" style="width: auto; padding: 6px 10px; font-size: 0.85rem;">
+          <input type="time" id="target-time" class="form-input" value="20:30" style="width: auto; padding: 6px 10px; font-size: 0.85rem;">
+        </div>
+      </div>
+
+      <p style="color: var(--text-secondary); font-size: 0.88rem; margin-bottom: 18px;">
+        Sigue estos pasos hacia atrás en el reloj para tener la masa en su punto óptimo de fermentación y tensión:
+      </p>
+
+      <div id="timeline-container" class="timeline">
+        <!-- Dynamically rendered via JS -->
+      </div>
+    </section>
+
+    <!-- AdSense Banner Unit Container -->
+    <div class="ad-slot-container">
+      <div class="ad-disclaimer">Publicidad</div>
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-3381238987477190"
+           data-ad-slot="1234567890"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+
+    <!-- SEO Educational Guide Section -->
+    <article class="seo-section">
+      <h2>Guía Maestra de Masa Madre, Hidratación y Fermentación de Pizza</h2>
+      <p>
+        El horneado de pan artesanal y pizza estilo napolitano combina ciencia microbiológica con técnica manual. A diferencia de las recetas tradicionales que miden en tazas o cucharas, la panadería moderna se rige por el <strong>porcentaje panadero</strong> y el control estricto de temperaturas y tiempos de maduración enzimática.
+      </p>
+
+      <div class="seo-box">
+        <strong>💡 ¿Cómo funciona el Porcentaje Panadero (Baker's Math)?</strong><br>
+        En la fórmula panadera, el peso de la <strong>harina siempre equivale al 100%</strong>. Todos los demás ingredientes se calculan como una fracción porcentual de la harina. Si preparas masa con <code>500 g de harina</code> al <code>65% de hidratación</code>, <code>2.5% de sal</code> y <code>20% de masa madre</code>:
+        <ul style="margin-top: 8px; margin-left: 20px;">
+          <li>Agua: <code>500 × 0.65 = 325 g</code></li>
+          <li>Masa Madre: <code>500 × 0.20 = 100 g</code></li>
+          <li>Sal: <code>500 × 0.025 = 12.5 g</code></li>
+          <li>Peso total de masa resultante = 937.5 g</li>
+        </ul>
+      </div>
+
+      <h3>Fuerza de la Harina (W) y Capacidad de Absorción</h3>
+      <p>
+        La cantidad de agua que una harina puede retener depende directamente de la calidad y cantidad de sus proteínas insolubles (gliadina y glutenina), medidas por el índice alveográfico <strong>W</strong>:
+      </p>
+      <ul style="margin-left: 20px; color: var(--text-secondary); line-height: 1.8;">
+        <li><strong>Harinas débiles (W 100 a 160 / 9% proteína):</strong> Harinas reposteras o 0000 comunes. Solo absorben entre 50% y 55% de agua. No resisten fermentaciones largas.</li>
+        <li><strong>Harinas medias (W 180 a 240 / 10.5% - 11.5% proteína):</strong> Harina panadera estándar (000 en Argentina). Ideal para panes directos y pizzas de 8 a 12 horas al 60%-65% de hidratación.</li>
+        <li><strong>Harinas de gran fuerza (W 280 a 380 / 12.5% - 14% proteína):</strong> Harinas de trigo candeal, Manitoba o harinas específicas para pizza napolitana (Caputo Pizzeria, Cuore di Farina). Soportan fermentaciones en frío de 24 a 48 horas e hidrataciones elevadas del 68% al 85% sin desmoronarse.</li>
+      </ul>
+
+      <h3>La Magia de la Fermentación en Frío (Cold Retard a 4°C)</h3>
+      <p>
+        Cuando guardamos la masa en el refrigerador a 4°C, las levaduras prácticamente se duermen, pero las bacterias ácido-lácticas (LAB) y las enzimas naturales de la harina siguen trabajando a ritmo pausado:
+      </p>
+      <ol style="margin-left: 20px; color: var(--text-secondary); line-height: 1.8;">
+        <li><strong>Digestibilidad superior:</strong> Las enzimas amilasas degradan los almidones complejos en azúcares simples consumibles, y las proteasas predigieren las cadenas de gluten, evitando la sensación de pesadez e inflamación tras comer pizza.</li>
+        <li><strong>Desarrollo aromático:</strong> La fermentación bacteriana genera ácidos orgánicos volátiles (ácido láctico y acético) que aportan los matices lácteos, mantecosos y suavemente ácidos característicos de la masa madre.</li>
+        <li><strong>Alveolos y Cornicione inflado:</strong> La red de gluten se relaja conservando el gas atrapado, permitiendo que al recibir el calor violento del horno el borde (<em>cornicione</em>) explote con grandes burbujas de aire.</li>
+      </ol>
+
+      <!-- FAQ Accordion -->
+      <h3 style="margin-top: 36px;">Preguntas Frecuentes sobre Fermentación y Masas</h3>
+      <div class="faq-accordion">
+        <div class="faq-item">
+          <div class="faq-question">¿Por qué se me pega la masa al manipularla con alta hidratación? <span>▼</span></div>
+          <div class="faq-answer">
+            Las masas superiores al 70% requieren un gluten bien desarrollado antes de tocarla. Utiliza la técnica de autólisis previa (reposo harina + agua sin sal ni fermento por 45 min), trabaja siempre con las manos mojadas en agua fría (el agua repele el gluten mejor que la harina), y aplica pliegues bobina (<em>coil folds</em>) en intervalos de 30 minutos dentro de un recipiente aceitado.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">¿Qué hago si mi masa madre tarda mucho en duplicar? <span>▼</span></div>
+          <div class="faq-answer">
+            La velocidad de la masa madre depende casi exclusivamente de la temperatura: a 18°C tardará entre 10 y 12 horas en duplicar, mientras que a 24°C-26°C lo logrará en 4 a 5 horas. Para acelerarla, puedes colocarla dentro del microondas o del horno apagado con la luz interior encendida (aporta un calor suave de 25°C a 27°C) y utilizar agua tibia a 28°C en el refresco.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">¿Por qué la sal se agrega al final del amasado? <span>▼</span></div>
+          <div class="faq-answer">
+            La sal es higroscópica (absorbe agua) y tiene un efecto inhibidor sobre las levaduras y las bacterias. Al realizar primero la autólisis sin sal, las enzimas hidratan el grano a máxima velocidad. La sal se incorpora 30 o 40 minutos después para tensar y fortalecer la red de gluten.
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Related Apps Cluster -->
+    <div class="related-cluster">
+      <div class="related-title">
+        <span>🔗 Otras herramientas útiles y calculadoras culinarias:</span>
+      </div>
+      <div class="related-links-grid">
+        <a href="https://sebiglesias.com.ar/pizzadita/" class="related-app-card">
+          <span>🍕 Calculadora Pizzadita</span>
+        </a>
+        <a href="https://sebiglesias.com.ar/cafe-ratio/" class="related-app-card">
+          <span>☕ Ratio Café de Especialidad</span>
+        </a>
+        <a href="https://sebiglesias.com.ar/dieta-barf/" class="related-app-card">
+          <span>🥩 Calculadora Dieta BARF</span>
+        </a>
+        <a href="https://sebiglesias.com.ar/asadin/" class="related-app-card">
+          <span>🥩 Calculadora de Asado</span>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Sticky Mobile Bar -->
+  <aside class="sticky-mobile-bar">
+    <div class="sticky-metric">
+      <span class="sticky-label">Masa total</span>
+      <span id="sticky-dough" class="sticky-val">1060 g</span>
+    </div>
+    <div class="sticky-metric">
+      <span class="sticky-label">Hidratación</span>
+      <span id="sticky-hydration" class="sticky-val">65%</span>
+    </div>
+    <button id="sticky-share-btn" class="sticky-btn">Fórmula</button>
+  </aside>
+
+  <!-- Script -->
+  <script src="app.js"></script>
+</body>
+</html>
